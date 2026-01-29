@@ -1,0 +1,90 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    cursor: pointer;
+    flex: 1;
+    min-width: 0;
+}
+
+.imageWrapper {
+    position: relative;
+    aspect-ratio: 712 / 398;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    background: var(--bg-elevated);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardOverlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(150, 165, 137, 0.7);
+    pointer-events: none;
+}
+
+.hoverTitle {
+    position: absolute;
+    top: var(--space-md);
+    left: var(--space-md);
+    right: var(--space-md);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: var(--text-primary);
+    pointer-events: none;
+}
+
+.info {
+    display: flex;
+    gap: 0;
+}
+
+.meta {
+    flex: 1;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.category {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text-tertiary);
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+}
+
+.description {
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: var(--text-tertiary);
+}
+
+@media (max-width: 768px) {
+    .hoverTitle {
+        font-size: 1.5rem;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: var(--space-xs);
+    }
+}

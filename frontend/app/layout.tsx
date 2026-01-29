@@ -1,0 +1,32 @@
+import type { Metadata } from "next";
+import { Plus_Jakarta_Sans } from "next/font/google";
+import HeaderWrapper from "@/components/HeaderWrapper";
+import Footer from "@/components/Footer";
+import "./globals.css";
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-primary",
+  weight: ["400", "500", "600", "700"],
+});
+
+export const metadata: Metadata = {
+  title: "Paranoids Agency",
+  description: "Independent design agency working across motion, branding, product, UI/UX, and immersive design.",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className={plusJakarta.variable}>
+        <HeaderWrapper />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
+}

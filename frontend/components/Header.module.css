@@ -1,0 +1,231 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: var(--space-lg) 0;
+    background: var(--bg-primary);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    transition: opacity var(--transition-fast);
+    z-index: 101;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.logo svg {
+    width: 60px;
+    height: 60px;
+}
+
+/* Right side container for nav + hamburger */
+.rightSection {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.nav {
+    display: flex;
+    gap: var(--space-xl);
+}
+
+.navLink {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    transition: color var(--transition-fast);
+}
+
+.navLink:hover {
+    color: var(--text-primary);
+}
+
+/* Hamburger Button */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 28px;
+    height: 28px;
+    padding: 4px;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.hamburgerLine {
+    width: 100%;
+    height: 2px;
+    background: var(--text-primary);
+    border-radius: 2px;
+    transition: all var(--transition-base);
+    transform-origin: center;
+}
+
+.hamburgerOpen .hamburgerLine {
+    opacity: 0;
+}
+
+/* ===== HERO VISUAL ===== */
+.heroVisual {
+    width: 100%;
+    max-width: 1304px;
+    margin: 0 auto;
+    padding: var(--space-lg) 0;
+    overflow: hidden;
+}
+
+.heroVisual img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+}
+
+/* ===== FULLSCREEN MENU - Olive Green ===== */
+.mobileMenu {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    background: #96A589;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-lg);
+}
+
+.menuHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: var(--space-lg);
+}
+
+.menuLogo {
+    display: flex;
+    align-items: center;
+}
+
+.menuLogo svg {
+    width: 60px;
+    height: 60px;
+}
+
+.closeButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: opacity var(--transition-fast);
+}
+
+.closeButton:hover {
+    opacity: 0.7;
+}
+
+.mobileNav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: var(--space-sm);
+    padding-right: var(--space-xl);
+}
+
+.mobileNavLink {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: opacity var(--transition-fast);
+}
+
+.mobileNavLink:hover {
+    opacity: 0.7;
+}
+
+.menuFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--space-lg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menuCopyright {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.menuSocial {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.menuSocial a {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color var(--transition-fast);
+}
+
+.menuSocial a:hover {
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        padding: var(--space-md) 0;
+    }
+
+    .logo svg {
+        width: 48px;
+        height: 48px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .heroCards {
+        flex-direction: column;
+        align-items: center;
+        padding: var(--space-md);
+    }
+
+    .heroCard {
+        max-width: 100%;
+    }
+
+    .mobileNavLink {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobileNavLink {
+        font-size: 1.75rem;
+    }
+
+    .mobileNav {
+        padding-right: var(--space-md);
+    }
+}
