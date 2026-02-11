@@ -1,0 +1,105 @@
+{
+    "colors": {
+        "primary": {
+            "white": "#ffffff",
+            "black": "#000000"
+        },
+        "secondary": {
+            "gray-light": "#bfb8b7",
+            "gray-medium": "#a49f9e",
+            "gray-dark": "#666666"
+        },
+        "text": {
+            "primary": "#ffffff",
+            "secondary": "#a49f9e",
+            "muted": "#bfb8b7"
+        },
+        "background": {
+            "primary": "#000000",
+            "secondary": "#1a1a1a",
+            "tertiary": "#2a2a2a"
+        }
+    },
+    "typography": {
+        "fontFamily": {
+            "primary": "Google Sans, sans-serif",
+            "fallback": "system-ui, -apple-system, sans-serif"
+        },
+        "fontSize": {
+            "xs": "12px",
+            "sm": "14px",
+            "base": "16px",
+            "lg": "18px",
+            "xl": "24px",
+            "2xl": "32px",
+            "3xl": "48px"
+        },
+        "fontWeight": {
+            "regular": 400,
+            "medium": 500,
+            "semibold": 600,
+            "bold": 700
+        },
+        "lineHeight": {
+            "tight": 1.2,
+            "normal": 1.5,
+            "relaxed": 1.75,
+            "loose": 2
+        },
+        "letterSpacing": {
+            "tighter": "-0.32px",
+            "tight": "-0.16px",
+            "normal": "0px",
+            "wide": "0.16px",
+            "wider": "0.32px"
+        }
+    },
+    "spacing": {
+        "0": "0px",
+        "1": "4px",
+        "2": "8px",
+        "3": "12px",
+        "4": "16px",
+        "5": "20px",
+        "6": "24px",
+        "8": "32px",
+        "10": "40px",
+        "12": "48px",
+        "16": "64px",
+        "20": "80px",
+        "24": "96px"
+    },
+    "borderRadius": {
+        "none": "0px",
+        "sm": "4px",
+        "md": "8px",
+        "lg": "12px",
+        "xl": "16px",
+        "2xl": "24px",
+        "full": "9999px"
+    },
+    "shadows": {
+        "sm": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+        "md": "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+        "lg": "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
+        "xl": "0 20px 25px -5px rgba(0, 0, 0, 0.1)"
+    },
+    "transitions": {
+        "fast": "150ms",
+        "base": "200ms",
+        "slow": "300ms",
+        "slower": "500ms"
+    },
+    "easing": {
+        "linear": "linear",
+        "easeIn": "ease-in",
+        "easeOut": "ease-out",
+        "easeInOut": "ease-in-out"
+    },
+    "breakpoints": {
+        "mobile": "320px",
+        "tablet": "768px",
+        "desktop": "1024px",
+        "wide": "1440px"
+    }
+}

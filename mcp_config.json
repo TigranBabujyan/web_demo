@@ -1,0 +1,13 @@
+{
+    "mcpServers": {
+        "figma": {
+            "command": "node",
+            "args": [
+                "./figma-mcp-server.js"
+            ],
+            "env": {
+                "FIGMA_API_KEY": "YOUR_FIGMA_API_KEY_HERE"
+            }
+        }
+    }
+}
