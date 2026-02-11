@@ -62,6 +62,7 @@ Paranoid Visuals is a business-card and services website for a company that prov
 ### Phase 1: Polished Demo (Current — Feb–Mar 2026)
 - [ ] Follow Figma designs strictly for all pages
 - [ ] Connect frontend to backend API (dynamic content)
+- [ ] Database integration for content storage
 - [ ] Responsive design finalization (mobile + desktop)
 - [ ] Reusable component architecture
 - [ ] Featured Works section — dynamic from DB
@@ -75,6 +76,7 @@ Paranoid Visuals is a business-card and services website for a company that prov
 - [ ] Admin panel for content management (read contact form submissions, manage content)
 - [ ] 3D model adaptive resolution for older devices
 - [ ] SEO optimization & metadata
+- [ ] Performance optimization (3D asset compression, lazy loading)
 - [ ] Error handling & loading states
 - [ ] Environment configuration (.env files)
 
@@ -104,6 +106,7 @@ Paranoid Visuals is a business-card and services website for a company that prov
 | Database integration | Dynamic content management | Content becomes backend-driven | Phase 1 |
 | Contact form backend | Capture customer inquiries | Submissions stored and viewable in admin | Phase 1–2 |
 | Merch shop | Revenue stream | New section with payment processing | Phase 3 |
+| "The Other Side" functionality | Core VR service feature | Users can upload and demo 3D content | Phase 3 |
 
 ### Future Considerations (To Be Decided Later)
 - [ ] CMS integration choice (Sanity, Contentful, custom?)
@@ -125,6 +128,11 @@ Paranoid Visuals is a business-card and services website for a company that prov
 
 ## Long-Term Vision (Suggested)
 - **VR Web Showcase Platform**: Become the go-to platform for 3D/VR art showcasing in browsers
+- **Artist Marketplace**: Allow artists to list and sell 3D works
+- **Enterprise Partnerships**: White-label VR showcase solutions for galleries and architecture firms
+- **Mobile VR App**: Companion app for immersive experiences
+- **API Service**: Provide embeddable 3D viewers for other websites
+
 ---
 
 **Last Updated**: 2026-02-11

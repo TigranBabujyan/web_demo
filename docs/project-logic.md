@@ -264,13 +264,17 @@ interface ContactSubmission {
 - Admin panel authentication
 - Contact form rate limiting & spam protection
 - Payment data security (PCI compliance for merch shop)
+- File upload validation for "The Other Side" feature
 - CORS configuration for production
 
 ---
 
 ## Performance Considerations
-- 3D model Async loading (future)
+- 3D model optimization (compress large .glb files)
+- Adaptive 3D resolution for older devices (future)
+- Image optimization and lazy loading
 - Code splitting via Next.js dynamic imports
+- CDN for static assets in production
 
 ---
 

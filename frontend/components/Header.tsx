@@ -7,14 +7,14 @@ import styles from "./Header.module.css";
 
 const navLinks = [
     { label: "THE OTHER SIDE", href: "/other-side" },
-    { label: "/ WORKS", href: "#works" },
-    { label: "CONTACT", href: "#contact" },
+    { label: "/ WORKS", href: "/works" },
+    { label: "CONTACT", href: "/contact" },
 ];
 
 const menuLinks = [
-    { label: "WORKS", href: "#works" },
+    { label: "WORKS", href: "/works" },
     { label: "ABOUT", href: "/about" },
-    { label: "CONTACT", href: "#contact" },
+    { label: "CONTACT", href: "/contact" },
     { label: "COURSE", href: "#course" },
     { label: "MERCH", href: "/merch" },
     { label: "THE OTHER SIDE", href: "/other-side" },

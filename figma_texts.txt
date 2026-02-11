@@ -1,0 +1,122 @@
+﻿node : [eval]:1
+At line:1 char:1
++ node -e "const 
+fs=require('fs'); 
+const d=JSON.parse(fs
+.readFileSync(' ...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: ([eval]:   
+ 1:String) [], Re    
+moteException
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+const 
+fs=require('fs'); 
+const d=JSON.parse(fs
+.readFileSync('C:/Use
+rs/tigra/.gemini/anti
+gravity/brain/1518f56
+a-edc6-4c06-ae75-9ab8
+c9283daf/.system_gene
+rated/steps/24/output
+.txt','utf8')); 
+function 
+extractTexts(node, 
+depth=0) { let 
+results=[]; if(node.t
+ype==='TEXT' && 
+node.characters) resu
+lts.push({name:node.n
+ame.substring(0,50), 
+text:node.characters.
+substring(0,100), 
+id:node.id}); 
+if(node.children) nod
+e.children.forEach(c 
+=> results.push(...ex
+tractTexts(c, 
+depth+1))); return 
+results; } const main
+=d.document.children[
+0]; main.children.for
+Each(section => { 
+console.log('\n=== 
+'+section.name+' 
+('+section.id+') 
+==='); 
+if(section.children 
+&& 
+section.children[0]) 
+{ const texts=extract
+Texts(section.childre
+n[0]); 
+texts.forEach(t => 
+console.log('  
+['+t.id+'] 
+'+t.name+': " 
++t.text+ \'));
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+           
+^^^^^^^^^^^^^^^^^^^
+Expected ',', got 
+'<eof>'
+
+SyntaxError: Invalid 
+or unexpected token
+    at 
+makeContextifyScript 
+(node:internal/vm:185
+:14)
+    at compileScript 
+(node:internal/proces
+s/execution:383:10)
+    at 
+evalTypeScript (node:
+internal/process/exec
+ution:256:22)
+    at node:internal/
+main/eval_string:74:3
+
+Node.js v22.20.0

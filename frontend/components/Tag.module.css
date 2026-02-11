@@ -1,0 +1,28 @@
+.tag {
+    padding: 8px 16px;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-tertiary);
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    white-space: nowrap;
+}
+
+.tag:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: var(--text-primary);
+}
+
+.tag.selected {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    border-color: var(--text-primary);
+}
+
+.tag.selected:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
