@@ -142,9 +142,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: var(--space-sm);
-    padding-right: var(--space-xl);
+    padding-left: var(--space-xl);
 }
 
 .mobileNavLink {
@@ -226,6 +226,6 @@
     }
 
     .mobileNav {
-        padding-right: var(--space-md);
+        padding-left: var(--space-md);
     }
 }

@@ -1,6 +1,7 @@
 .container {
     width: 100%;
-    height: 500px;
+    height: 800px;
+    min-height: 600px;
     position: relative;
     overflow: hidden;
     background: transparent;
@@ -12,6 +13,9 @@
     display: block;
     cursor: grab;
     outline: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .canvas:active {
@@ -20,6 +24,8 @@
 
 @media (max-width: 768px) {
     .container {
-        height: 350px;
+        height: 70vh;
+        min-height: 400px;
+        max-height: 600px;
     }
 }

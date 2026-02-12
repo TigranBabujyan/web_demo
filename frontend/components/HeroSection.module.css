@@ -1,5 +1,184 @@
 .section {
-    width: 100%;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
     background: var(--bg-primary);
-    padding: var(--space-lg) 0;
+}
+
+/* Hero text overlay - matches Figma bottom-left positioning */
+.heroContent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 0 32px 32px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    pointer-events: none;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+}
+
+.heroLabel {
+    font-family: var(--font-body, 'Google Sans', sans-serif);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-secondary, #BFB8B3);
+    letter-spacing: 0.18px;
+}
+
+.heroTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.heroTitleSmall {
+    font-family: var(--font-heading, 'Google Sans', sans-serif);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary, #ffffff);
+    text-transform: uppercase;
+    letter-spacing: -0.96px;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.heroTitleLarge {
+    font-family: var(--font-heading, 'Google Sans', sans-serif);
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--text-primary, #ffffff);
+    text-transform: uppercase;
+    letter-spacing: -1.6px;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.heroDescription {
+    font-family: var(--font-body, 'Google Sans', sans-serif);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-muted, #A49F9E);
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+.heroButton {
+    pointer-events: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: transparent;
+    border: 1px solid var(--text-primary, #ffffff);
+    border-radius: 999px;
+    color: var(--text-primary, #ffffff);
+    font-family: var(--font-body, 'Google Sans', sans-serif);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+    padding: 14px 28px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.heroButton:hover {
+    background: var(--text-primary, #ffffff);
+    color: var(--bg-primary, #1a1a18);
+}
+
+.heroButtonArrow {
+    display: inline-flex;
+    transition: transform 0.3s ease;
+}
+
+.heroButton:hover .heroButtonArrow {
+    transform: translateX(4px);
+}
+
+/* Subtle radial gradient overlay matching Figma's 6% opacity bg */
+.heroGradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center,
+            rgba(255, 255, 255, 0.04) 0%,
+            rgba(255, 255, 255, 0) 70%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Central PARANOID'S logo - matching Figma screenshot */
+.heroLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.heroLogoText {
+    font-family: var(--font-heading, 'Google Sans', sans-serif);
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 700;
+    color: #ED2D21;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 0 2px 20px rgba(237, 45, 33, 0.3);
+    white-space: nowrap;
+
+    /* Animation */
+    display: inline-block;
+    animation: logoWobble 8s ease-in-out infinite;
+}
+
+@keyframes logoWobble {
+
+    0%,
+    100% {
+        transform: rotate(-2deg) translateY(-5px);
+    }
+
+    50% {
+        transform: rotate(2deg) translateY(5px);
+    }
+}
+
+@media (max-width: 768px) {
+    .heroContent {
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 20px 24px 20px;
+        align-items: flex-start;
+    }
+
+    .heroTitleSmall {
+        font-size: 18px;
+    }
+
+    .heroTitleLarge {
+        font-size: 28px;
+    }
+
+    .heroDescription {
+        font-size: 14px;
+    }
+
+    .heroButton {
+        font-size: 14px;
+        padding: 12px 24px;
+    }
 }
