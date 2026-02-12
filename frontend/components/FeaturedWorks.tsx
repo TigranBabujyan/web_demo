@@ -112,6 +112,7 @@ export default function FeaturedWorks({ sections }: FeaturedWorksProps) {
                                     {row.cards.map((card) => (
                                         <WorkCard
                                             key={card.id}
+                                            id={card.id}
                                             image={card.image}
                                             category={card.category}
                                             title={card.title}

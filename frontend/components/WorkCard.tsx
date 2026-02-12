@@ -5,7 +5,7 @@ import Link from "next/link";
 import styles from "./WorkCard.module.css";
 
 interface WorkCardProps {
-    id: number;
+    id: string;
     image: string;
     category: string;
     title: string;
