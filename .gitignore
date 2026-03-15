@@ -36,3 +36,7 @@ coverage/
 
 # Misc
 *.pem
+
+# 3D assets
+*.glb
+*.abc
